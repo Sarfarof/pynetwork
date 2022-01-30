@@ -1,0 +1,5 @@
+my_var = "ip nat inside source list ACL interface FastEthernet0/1 overload"
+
+#Заменяем все подстроки Fast в строке
+a = my_var.replace("Fast", "Gigabit")
+print(a)
