@@ -1,0 +1,19 @@
+Задание 4.3
+
+
+Получить из строки config такой список VLANов:
+['1', '3', '10', '20', '30', '100']
+
+config = "switchport trunk allowed vlan 1,3,10,20,30,100"
+
+
+
+Метод split
+Метод split() разбивает строку на части, используя как разделитель какой-то символ (или символы) и возвращает список строк:
+
+config = "switchport trunk allowed vlan 1,3,10,20,30,100"
+com = config.split()
+print(com)
+
+vlans =com[-1].split(',')
+print(vlans)
